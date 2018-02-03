@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="PC Game recommender system" content="">
+    <meta name="Elizabeth Ferriss" content="">
+
+    <title>Game recommendations</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../static/css/thumbnail-gallery.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="/">Playful: Find your new favorite computer game</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Game recommendations
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about_playful">How it works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about_me">About me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Recommender button -->
+<div class="container">
+      <h1 class="my-4 text-center text-lg-left">Own games on <a href='http://store.steampowered.com/'>Steam</a>?</h1>
+      <p>Input your Steam vanityURL (e.g., 'elizabethferriss') or user ID to get suggestions for what to play next.</p>
+    </div>
+
+    <div class = "container">
+
+      <form  action="/recommendations" method="GET">
+        <div class="form-group">
+          <label for="user_id">Your Steam ID:</label>
+          <input type="text" id="user_id" name='user_id' placeholder="">
+        </div>
+
+        <div>
+          <button type="submit" class="btn btn-default btn-lg">Get recommendations!</button>
+        </div>
+
+      </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+
+  </div> <!-- /.container-->
+
+
+    <!-- Popular games -->
+    <div class="container">
+
+      <h1 class="my-4 text-center text-lg-left">Popular games</h1>
+
+      <div class="row text-center text-lg-left">
+
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class = "caption">
+             <h3>Garry's Mod</h3>
+          </div>
+          <a href="http://store.steampowered.com/app/4000/" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="http://cdn.steamstatic.com/steam/apps/4000/header.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class = "caption">
+             <h3>Unturned</h3>
+          </div>
+          <a href="http://store.steampowered.com/app/304930" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="http://cdn.steamstatic.com/steam/apps/304930/header.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class = "caption">
+             <h3>Counter-Strike</h3>
+          </div>
+          <a href="http://store.steampowered.com/app/730/" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="http://cdn.steamstatic.com/steam/apps/730/header.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class = "caption">
+             <h3>Left 4 Dead 2</h3>
+          </div>
+          <a href="http://store.steampowered.com/app/550" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="http://cdn.steamstatic.com/steam/apps/550/header.jpg" alt="">
+          </a>
+
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class = "caption">
+             <h3>PAYDAY 2</h3>
+          </div>
+          <a href="http://store.steampowered.com/agecheck/app/218620/" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="http://cdn.steamstatic.com/steam/apps/218620/header.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class = "caption">
+             <h3>Skyrim</h3>
+          </div>
+          <a href="http://store.steampowered.com/agecheck/app/489830/" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="http://cdn.steamstatic.com/steam/apps/72850/header.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class = "caption">
+             <h3>Terraria</h3>
+          </div>
+          <a href="http://store.steampowered.com/app/105600" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="http://cdn.steamstatic.com/steam/apps/105600/header.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class = "caption">
+             <h3>Portal 2</h3>
+          </div>
+          <a href="http://store.steampowered.com/app/620/" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="http://cdn.steamstatic.com/steam/apps/620/header.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class = "caption">
+             <h3>Warframe</h3>
+          </div>
+          <a href="http://store.steampowered.com/agecheck/app/230410/" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="http://cdn.steamstatic.com/steam/apps/230410/header.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class = "caption">
+             <h3>Robocraft</h3>
+          </div>
+          <a href="http://store.steampowered.com/app/301520/" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="http://cdn.steamstatic.com/steam/apps/301520/header.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class = "caption">
+             <h3>Civilization V</h3>
+          </div>
+          <a href="http://store.steampowered.com/app/8930" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="http://cdn.steamstatic.com/steam/apps/8930/header.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class = "caption">
+             <h3>Borderlands 2</h3>
+          </div>
+          <a href="http://store.steampowered.com/agecheck/app/49520/" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="http://cdn.steamstatic.com/steam/apps/49520/header.jpg" alt="">
+          </a>
+        </div>
+      </div>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
