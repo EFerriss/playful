@@ -1,10 +1,19 @@
 import pickle
+import numpy as np
 
 path_to_data = 'playful//static//data//'
 
-# pre-computed matrix of similarities between games
-with open(''.join((path_to_data, 'item_similarity_matrix.p')), 'rb') as f:
-	game_similarity_matrix = pickle.load(f)
+# pre-trained lightfm model created using implicit feedback
+with open(''.join((path_to_data, 'model_final.p')), 'rb') as f:
+	 model = pickle.load(f)
+
+def get_item2item_matrix(model):
+    itemitem = model.item_embeddings.dot(model.item_embeddings.T)
+    normalizeto = np.array([np.sqrt(np.diagonal(itemitem))])
+    itemitem = itemitem / normalizeto / normalizeto.T
+    return itemitem
+
+game_similarity_matrix = get_item2item_matrix(model)
 
 # mapping dictionaries to switch between index, game ID, and game name
 with open(''.join((path_to_data, 'gameid_to_gamename.p')), 'rb') as f:
