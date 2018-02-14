@@ -8,15 +8,15 @@ First, I obtained Steam data and performed some initial data exploration using
 * API calls
 * PostgreSQL
 
-Next I generated, optimized, and validated a model using
+Next I generated, optimized, and validated a collaborative filtering model with implicit feedback using
 * sparse matrices
 * matrix factorization
-* LightFM
+* recall@k
 
 Finally I built a web app to turn that model into recommendations for anyone who owns games on Steam using:
-* item-to-item recommendations
+* item-to-item recommendations 
 * pandas
 * flask
 * Amazon web services
 
-The files for the app are in the app folder, and [this notebook](https://github.com/EFerriss/playful/blob/master/Playful's%20Pipeline.ipynb) provides more details about how the model was built.
+If you want the gory details, check out [this notebook](https://github.com/EFerriss/playful/blob/master/Playful's%20Pipeline.ipynb).
