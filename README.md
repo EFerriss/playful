@@ -13,7 +13,7 @@ Next I generated, optimized, and validated a collaborative filtering model with 
 * matrix factorization
 * recall@k
 
-Finally I built a web app to turn that model into recommendations for anyone who owns games on Steam using:
+Finally I built a web app to turn that model into recommendations for anyone who owns games on Steam using
 * item-to-item recommendations 
 * pandas
 * flask
