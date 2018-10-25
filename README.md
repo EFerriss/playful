@@ -1,6 +1,6 @@
 # Playful
 
-For my 3-week [Insight Data Science Fellowship](https://www.insightdatascience.com/) project in 2018, I used data from the Steam game store to build an app called Playful to make computer game recommendations for Steam users using [collaborative filtering with implicit feedback](http://yifanhu.net/PUB/cf.pdf). The app isn't live anymore because I stopped paying the AWS instance, but all the code and details you would need to recreate it are here.
+For my 3-week [Insight Data Science Fellowship](https://www.insightdatascience.com/) project in 2018, I used data from the Steam game store to build an app called Playful to make computer game recommendations for Steam users using [collaborative filtering with implicit feedback](http://yifanhu.net/PUB/cf.pdf). The app isn't live anymore because I stopped paying for the AWS instance, but all the code and details you would need to recreate it are here.
 
 ## How playful was built
 First, I obtained Steam data and performed some initial data exploration using
